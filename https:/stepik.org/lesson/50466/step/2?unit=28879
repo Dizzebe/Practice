@@ -1,0 +1,3 @@
+cat task.txt
+// std_msgs/Header
+rosmsg show std_msgs/Header > out.txt
