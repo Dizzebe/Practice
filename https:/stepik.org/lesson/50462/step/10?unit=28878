@@ -1,0 +1,12 @@
+cd workspace
+mv logger src
+cd src
+mv src logger
+cd logger
+mkdir src
+mv main.cpp ~/workspace/src/logger/src
+cd ../
+mv package.xml ~/workspace/src/logger
+catkin_init_workspace
+cd ../
+catkin_make
