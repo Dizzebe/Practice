@@ -1,0 +1,6 @@
+mkdir -p workspace/src
+cd workspace/src
+catkin_init_workspace
+catkin_create_pkg hello_world
+cd hello_world
+catkin_make
