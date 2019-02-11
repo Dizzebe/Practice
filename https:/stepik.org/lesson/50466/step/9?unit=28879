@@ -1,0 +1,9 @@
+mkdir workspace/src
+cd workspace/src
+catkin_create_pkg my_message
+cd my_message
+nano CMakeLists.txt  //Редактирование файла CMakeLists.txt показать тут не получится
+nano package.xml  //Аналогично и с package.xml
+mkdir msg
+cd msg
+nano Message1.msg //Внутри написан любой текст
