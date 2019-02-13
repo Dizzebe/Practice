@@ -1,0 +1,14 @@
+cd workspace/src
+catkin_create_pkg my_service message_generation message_runtime
+nano package.xml
+cd my_service
+mkdir srv
+cd srv
+touch AddInts.srv
+nano AddInts.srv // Заполнение файла для определения формата данных
+cd ..
+nano CMakeLists.txt
+cd ../..
+catkin_make
+source devel/setup.bash
+rossrv show my_service/AddInts 
