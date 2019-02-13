@@ -1,0 +1,2 @@
+rosservice list > out.txt
+nano out.txt //Просмотр доступных для вызова сервисов
