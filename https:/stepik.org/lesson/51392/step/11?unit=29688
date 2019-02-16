@@ -1,0 +1,16 @@
+roscore
+
+rosrun rviz rviz \\необходимо добавить поле Marker
+
+mkdir workspace
+mkdir workspace/src
+cd workspace/src
+catkin_create_pkg rviz_manip roscpp
+catkin_init_workspace
+cd rviz_manip/src
+touch publish_marker.cpp
+nano publish_marker.cpp \\код созавалася и редактировался в терминале на сайте
+cd ..
+nano package.xml \\проверка создания зависимостей
+nano CMakeLists.txt \\добавление условий создания исполняемого файла
+rosrun_rviz_manip publish_point \\в открывшемся окне rviz необходимо настроить название топика и фикстфрейма
