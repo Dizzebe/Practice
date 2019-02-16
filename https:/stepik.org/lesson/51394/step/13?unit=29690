@@ -1,0 +1,12 @@
+mkdir workspace
+mkdir workspace/src
+cd workspace/src
+catkin_create_pkg tf_convertor roscpp tf geometry_msgs
+cd tf_convertor
+nano CMakeLists.txt //добавление выполняемых файлов
+cd src
+nano broadcaster.cpp //задача ноды - написание в tf взаимоотношений между base_link и base_laser
+nano listener.cpp //задача ноды - генерация данных base_laser и перевод их в координаты робота
+rosrun tf_convertor listener
+
+rossun sqt_graph rqt_graph //просмотр графа работающей ноды listener
