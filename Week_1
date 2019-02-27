@@ -1,0 +1,20 @@
+import rospy
+from hrwros_msgs.msg import
+
+def sensor_info_callback(data, bhi_pub):
+    height_box = sensor_info
+    if height_box < 10:
+        pass
+    else:
+        box_height_info = height_box
+        try:
+          sensorInfoPublisher()
+       
+if __name__ == '__main__':
+    rospy.init_node('compute_box_height', anonymous = False)
+    rospy.loginfo('Waiting for topic %s to be published...', height_info)
+    rospy.wait_for_message('massages', string)
+    rospy.loginfo('%s topic is now available!', height_info)
+    bhi_publisher = rospy.Publisher('Publisher',string, queue_size=10)
+    rospy.Subscriber('Subscriber', string, Publisher, bhi_publisher)
+    rospy.spin()
